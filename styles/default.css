@@ -17,6 +17,10 @@ a:visited {
 	text-decoration: none;
 }
 
+a.special_link {
+	color: red;
+}
+
 /* NAV */
 #side_nav p {
     margin-bottom: 0px;
