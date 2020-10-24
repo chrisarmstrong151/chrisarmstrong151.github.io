@@ -109,7 +109,7 @@
 		});
 	
 	// Add some special code to bind the listener for the update button.	
-	$('svg').on('load', function() {
+	/*$('svg').on('load', function() {
 	
 		$('#Update').on('click', function() {
 		
@@ -117,7 +117,17 @@
 		
 		});
 	
-	});
+	});*/
+
+	$( window ).on( "load", function() {
+
+		$('#Update').on('click', function() {
+		
+			update();
+		
+		});
+
+	})
 	
 	// Dictate the algorithm options behavior.
 	$('#algorithm_options input').on('click', function() {
