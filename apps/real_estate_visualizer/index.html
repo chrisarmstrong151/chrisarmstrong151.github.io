@@ -71,7 +71,7 @@
 	<script type="text/javascript">
 	
 	// Add some special code to bind the listener for the load data button.	
-	$('#load_data').on('click', function() {
+	$('#load_data').on('click', function(event) {
 		
 			// Read the checkboxes.
 			var which_set = '';
@@ -119,7 +119,7 @@
 	
 	});*/
 
-	$( window ).on( "load", function() {
+	$( window ).on( "load", function(event) {
 
 		$('#Update').on('click', function() {
 		
