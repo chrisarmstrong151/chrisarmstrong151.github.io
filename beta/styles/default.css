@@ -120,6 +120,9 @@ a.special_link {
     font-size: 1.35em;
     margin: 0 34px 0 24px;
 }
+#data_icon.special_icon {
+    margin: 0 31px 0 20px;
+}
 #web_icon{
     font-size: 1.5em;
     margin: 0 29px 0 20px;
