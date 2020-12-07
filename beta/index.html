@@ -13,6 +13,8 @@
     <script src="scripts/jquery-ui.min.js"></script>
     <!-- font awesome icons -->
     <script src="https://use.fontawesome.com/a99d7bec1f.js"></script>
+    <!--script src="https://use.fontawesome.com/212b323cd8.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /-->
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     
@@ -43,7 +45,7 @@
                     
                 }
                 
-                if(nav_data == "visualizations" || nav_data == "publications" || nav_data == "explainer" || nav_data == "data" || nav_data == "dev" || nav_data == "math" || nav_data == "code_samples" || nav_data == "resume"){
+                if(nav_data == "visualizations" || nav_data == "publications" || nav_data == "data" || nav_data == "code_samples" || nav_data == "resume"){
                     //fade out logo
                     $(".nav_image2").css("opacity", "0");
                     $(".nav_image1").css("opacity", "1");
@@ -92,10 +94,7 @@
         <div class="nav_option about_nav" id="about_nav"data-where="splash"><i class="fa fa-user" aria-hidden="true" id="user_icon"></i>About</div>
         <div class="nav_option" data-where="visualizations"><i class="fa fa-area-chart special_icon" aria-hidden="true" id="data_icon"></i>Visualizations</div>
         <div class="nav_option" data-where="publications"><i class="fa fa-file-text" aria-hidden="true" id="data_icon"></i>Publications</div>
-        <div class="nav_option" data-where="explainer"><i class="fa fa-file-text" aria-hidden="true" id="data_icon"></i>PhD</div>
         <div class="nav_option" data-where="data"><i class="fa fa-database" aria-hidden="true" id="data_icon"></i>Data Apps</div>
-        <div class="nav_option" data-where="dev"><i class="fa fa-code" aria-hidden="true" id="web_icon"></i>Dev</div>
-        <div class="nav_option" data-where="math"><i class="fa fa-calculator" id="math_icon" aria-hidden="true"></i>Math</div>
 		<div class="nav_option" data-where="code_samples"><i class="fa fa-file-code-o" id="samples_icon" aria-hidden="true"></i>Code Samples</div>
         <div class="nav_option" data-where="resume"><i class="fa fa-arrow-circle-o-down" aria-hidden="true" id="download_icon"></i>Resum&eacute;</div>
     </div>
@@ -112,14 +111,16 @@
                         <p class="header_info contact_line">chrisarmstrong151@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;(202) 577-2124&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Washington, DC</p>
 						</div>                        
                     </div>
-                    <p id="splash_overview">My name is Chris.  I do data, programming, and math.  A lot of the time, I end up doing all three.  I work as a mathematician for the <a href="https://web.sas.upenn.edu/gregory-lab/" target="_blank">Gregory lab</a> at the University of Pennsylvania, developing models for genetic data.  I also create data visualizations and interfaces for the lab.<br/><br/>
+                    <p id="splash_overview">I work as a bioinformatician for the <a href="https://web.sas.upenn.edu/gregory-lab/" target="_blank">Gregory lab</a> at the University of Pennsylvania, developing models for bench data and creating data visualizations. My primary research interest in the lab is the N<sup>6</sup>-methyladenosine (m6A) modification in <i>A. thaliana</i>.<br/><br/>
+
+                    I also work for the <a href="https://hive.biochemistry.gwu.edu/home", target="_blank">Mazumder (HIVE) lab</a> at George Washington University as the chief engineer for the FDA-funded <a href="https://www.biocomputeobject.org/" target="_blank">BioCompute Object API</a>.  The portal interface for this project can be found <a href="https://portal.aws.biochemistry.gwu.edu/sign-in", target="_blank">here</a> and the source code for this can be found on <a href="https://github.com/biocompute-objects/bco_editor" target="_blank">github</a>.<br/><br/>
 					
-					5+ years data languages (Python, R, SQL).<br/>
-					7+ years web languages (CSS, HTML, JavaScript).<br/>
-					7+ years applied mathematics.<br/>
-					B.S. Mechanical Engineering, M.S. Analytics (Quantitative Track).<br/><br/>				
-					
-					Mini Portfolio&nbsp;&nbsp;&ndash;&nbsp;&nbsp;<a href="apps/real_estate_visualizer/index.html" target="_blank">Real Estate Visualizer</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="media/report.pdf" target="_blank">Statistical Report</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="media/project.pdf" target="_blank">Project Treatment</a><br/><br/>
+					<b>Research Interests:</b> Combinatorics, Data Visualization, Genomics and Epigenetics, Probability and Statistics<br/><br/>
+                    <b>Proficiencies (5+ years):</b> Applied Mathematics (statistics, convex optimization, linear regression, simulation); Python (class-based programming, joblib [parallelization library], jsonschema, NumPy); R (base, data.table, doParallel and forEach [parallelization library], ggplot2, plotly); SQL; Japanese (daily-level fluency)<br/><br/>
+                    <b>Familiarities (1-3 years):</b> Sophomore biology sequence (general biology, genetics, general and organic chemistry); C++; Genomics and Epigenetics; Python (D3); Real Analysis<br/><br/>
+                    <b>Academics:</b> B.S. Mechanical Engineering, M.S. Analytics (Quantitative Track)<br/><br/>
+
+                    Mini Portfolio&nbsp;&nbsp;&ndash;&nbsp;&nbsp;<a href="media/research_samples_combined.pdf" target="_blank">Visualization Portfolio</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="media/Anagram_1_of_2.pdf" target="_blank">Combinatorics Preprint</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="apps/real_estate_visualizer/index.html" target="_blank">ML/JSONTopos Visualizer</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="media/christopher_david_armstrong_code_samples.pdf" target="_blank">Code Samples</a><br/><br/>
 					
 					Any work without links is due to proprietary agreements.
 					</p>
@@ -131,50 +132,14 @@
             <div class="primary_section" id="visualizations">
                 <div class="content_container">
                     <h1>Visualizations</h1>
-                    <p class="specialty_overview">I have over 5 years of experience analyzing, designing, and reporting on data in several languages and formats. This experience has been gained through both higher academic coursework and my roles with organizations and clients. Data are the heart of any modern organization, and as an analyst I will help you design, create, and manage data systems which are sure to improve your organization's efficiency.</p>
-                    <div class="proficiencies"><p class="proficiency_title">Proficiencies:</p><img class="proficiency_icon" src="media/python.svg"><img class="proficiency_icon" src="media/r.svg"><img class="proficiency_icon" src="media/SQL.svg"><br/>
-                    <p class="proficiency_title"><span class="libraries">Libraries</span><br/>Python - D3 / JSON / NumPy / Pandas / Plotly<br/>R - base / dplyr / Shiny<p></div>
-                    <div class="project">
-                        <div class="project_icons penn">
-                            <p class="icons_text project_title">UPenn</p>
-                            <p class="icons_text project_description">Data Visualizer</p>
-                            <p class="icons_text description">Interface</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/css.svg">
-                                <img class="skill_icon" src="media/html.svg">
-                                <img class="skill_icon" src="media/jquery.svg">
-                                <img class="skill_icon" src="media/JS.svg">
-                            </div>
-                            <p class="icons_text description">Back End</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/r.svg">
-                            </div>
-                        </div>
-                        <p class="project_p">I created a data visualization app to facilitate the graphing of large and varied data sets.  The app consists of a back end batch processor for data files, a metric file system, and a file coordinator.  The front end consists of a Shiny interface which allows the user to customize graphing options for the batch grapher.  This app makes exentive use of Shiny, jQuery, and third party libraries like shinyjs.<br/><br/>
-                        
-                        2000+ lines                     
-                        </p>
+                    <p class="specialty_overview">A primary focus of my research is data visualization.  In particular, I am interested in producing graphs and multimedia for non-technical/specialized audiences.  I aim for visualizations that accomplish two things: 1) reducing the time between results and analysis, and 2) making clear which part of a hypothesis was tested and whether or not the test indicated anything of relevance to the experiment.</p>
+                    <p class="specialty_overview">Nearly all of the visualizations below were created using custom scripting requiring at least 1,000 lines in the data pipeline.  That is, in addition to "out-of-the-box" graphing, I am also capable of creating new graphing paradigms from libraries such as ggplot2 and plotly.</p>
+                    <div class="proficiencies"><p class="proficiency_title">Proficiencies:</p><img class="proficiency_icon" src="media/r.svg"><br/>
+                    <p class="proficiency_title"><span class="libraries">Libraries</span><br/>R - base / ggplot2 / plotly<p>
                     </div>
                     <div class="project">
-                        <div class="project_icons georgia_tech">
-                            <p class="icons_text project_title">Georgia Tech</p>
-                            <p class="icons_text project_description">Data Visualizer | <a class="special_link" href="apps/real_estate_visualizer/index.html" target="_blank">Link</a></p>
-                            <p class="icons_text description">Interface</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/css.svg">
-                                <img class="skill_icon" src="media/html.svg">
-                                <img class="skill_icon" src="media/jquery.svg">
-                                <img class="skill_icon" src="media/JS.svg">
-                            </div>
-                            <p class="icons_text description">Back End</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/python.svg">
-                                <img class="skill_icon" src="media/r.svg">
-                            </div>
-                        </div>
-                        <p class="project_p">As the sole app developer on my team, I modified code from two third-party projects to create a chloropleth map of the United States.  The user interface was designed with highly customizable search parameters so that the main data set could be subsetted to a high precision.  This project made extensive use of JSON, topoJSON, and D3 capabilities, and was my first chloropleth project.<br/><br/>
-                        
-                        1000+ lines                     
+                        <p class="project_p">
+                            <iframe class="explainer" width="560" height="315" src="media/research_samples_combined.pdf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </p>
                     </div>
                 </div>
@@ -205,6 +170,10 @@
             <div class="primary_section" id="publications">
                 <div class="content_container">
                     <h1>Publications</h1>
+                    <p class="specialty_overview">My background is primarily in quantitative disciplines (mechanical engineering and analytics).  In a research setting, I have applied these skills to study primarily N<sup>6</sup>-methyladenosine data in <i>A. thaliana</i>.  In particular, I study how the structure/function relationship of mRNA and the m6A modifiction are related.  However, this modification is well known in not only plants, but also in humans.  It is associated with cancer epigenetics, being involed in all stages of tumor initiation, growth, and metastasis.</p>
+                    <p class="specialty_overview">The first two preprints below are related to this modification.</p>
+                    <div class="proficiencies"><p class="proficiency_title">Proficiencies: statistics, convex optimization, linear regression, simulation</p><br/>
+                    </div>
                     <div class="project">
                         <p class="project_p publication">Armstrong, Chris D. The Anagram Formula is Uniquely Maximized in the Positive Integers. 2020. TS. The University of Pennsylvania, Philadelphia. ArXiv. The University of Pennsylvania, 2020. Web. 2020. &lt;https://arxiv.org&gt;. ORCIDs: 0000-0002-9236-472X (Armstrong, Christopher).
                         </p>
@@ -214,16 +183,11 @@
                             <b>Contribution:&nbsp;</b> All (only author). <br/><br/>
                         </p>
                         <p class="project_p associated_media">
-                            Explainer Video
+                            Preprint
                         </p>
-                        <p class="project_p">
-                        	<iframe class="explainer" width="560" height="315" src="https://www.youtube.com/embed/scgsHJp8mWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </p>
-                        <p class="project_p associated_media">
-                            Associated Media
-                        </p>
+                        <iframe src="media/Anagram_1_of_2.pdf#page=1&zoom=75"></iframe>
                     </div>
-                    <div class="project">
+                    <!--div class="project">
                         <p class="project_p publication">Armstrong, Chris D. Bounds on Shared Sub-sequences in Genomes. 2020. TS. The University of Pennsylvania, Philadelphia. ArXiv. The University of Pennsylvania, 2020. Web. 2020. &lt;https://arxiv.org&gt;. ORCIDs: 0000-0002-9236-472X (Armstrong, Christopher).
                         </p>
                         <p class="project_p">
@@ -232,15 +196,9 @@
                             <b>Contribution:&nbsp;</b> All (only author). <br/><br/>
                         </p>
                         <p class="project_p associated_media">
-                            Explainer Video
+                            Preprint
                         </p>
-                        <p class="project_p">
-                        	<iframe class="explainer" width="560" height="315" src="https://www.youtube.com/embed/scgsHJp8mWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </p>
-                        <p class="project_p associated_media">
-                            Associated Media
-                        </p>
-                    </div>
+                    </div-->
                     <div class="project">
                         <p class="project_p publication">Sharma, Bishwas et al. "Plant Direct." 2020. TS. The University of Pennsylvania, Philadelphia. Plant Direct. The American Society of Plant Biologists, 2020. Web. 2020. &lt;https://onlinelibrary.wiley.com/journal/24754455&gt;. ORCIDs: 0000-0002-9236-472X (Armstrong, Christopher).
                         </p>
@@ -250,30 +208,35 @@
                             <b>Contribution:&nbsp;</b> Armstrong showed that m6a deposition in A. thaliana under abiotic cold stress conditions is highly specific to partitioned sets of genes responsible for cold stress response. In particular, cold-specific m6a sites are shown to be highly selective for the stop codon and downstream positions with a deposition probability of approximately half that of background. <br/><br/> 
                         </p>
                         <p class="project_p associated_media">
-                            Explainer Video
+                            Preprint (My Contribution)
+                        </p>
+                        <iframe src="media/CDS_3_Graph.pdf#page=1&zoom=75"></iframe>
+                    </div>
+                    <div class="project">
+                        <p class="project_p publication">Armstrong, Chris and Matthew Hieseger. "UDC Internal Document." 2014. TS. The University of The District of Columbia. UDC Internal Document. The University of the District of Columbia, None. Print. 2020. None. ORCIDs: 0000-0002-9236-472X (Armstrong, Christopher).
                         </p>
                         <p class="project_p">
-                        	<iframe class="explainer" width="560" height="315" src="https://www.youtube.com/embed/scgsHJp8mWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <b>Areas:&nbsp;</b> Applied Statistics, Adult Education<br/><br/>
+                            <b>Summary:&nbsp;</b> Armstrong and Hieseger conducted a review of mathematics education at an adult workforce center.<br/><br/>
+                            <b>Contribution:&nbsp;</b> Armstrong mentored a statistician intern (who went on to become an actuary) while he and the intern conducted a review of the mathematics curricula in a vocational setting.  Together they performed a statistical analysis to determine the mathematical aptitude of incoming students, and also conducted workshops to improve mathematical literacy.  Recommendations for the University were provided in the form of a report. <br/><br/> 
                         </p>
                         <p class="project_p associated_media">
-                            Associated Media
+                            Report
                         </p>
-                        <p class="project_p associated_media">
-                            <img src="media/sharma_associated_media.png">
-                        </p>
+                        <iframe src="media/report.pdf#page=1&zoom=75"></iframe>
                     </div>
                 </div>
             </div>
             <div class="primary_section" id="data">
                 <div class="content_container">
                     <h1>Data</h1>
-                    <p class="specialty_overview">I have over 5 years of experience analyzing, designing, and reporting on data in several languages and formats. This experience has been gained through both higher academic coursework and my roles with organizations and clients. Data are the heart of any modern organization, and as an analyst I will help you design, create, and manage data systems which are sure to improve your organization's efficiency.</p>
+                    <p class="specialty_overview">In addition to exploratory research, I am also interested in application development.  I have it as a main goal to take the complex scripts that I write and make them usable for other researchers (especially those without a strong programming background).  "Benchworks", listed below, is an R library that is in the process of being standardized so that it can be published on the CRAN server.  The package focuses on parallelized, command line-executable analysis for bench researchers.</p>
                     <div class="proficiencies"><p class="proficiency_title">Proficiencies:</p><img class="proficiency_icon" src="media/python.svg"><img class="proficiency_icon" src="media/r.svg"><img class="proficiency_icon" src="media/SQL.svg"><br/>
-					<p class="proficiency_title"><span class="libraries">Libraries</span><br/>Python - D3 / JSON / NumPy / Pandas / Plotly<br/>R - base / dplyr / Shiny<p></div>
+					<p class="proficiency_title"><span class="libraries">Libraries</span><br/>Python - JSON / NumPy / Pandas / plotly<br/>R - base / dplyr / ggplot2 / plotly / Shiny<p></div>
 					<div class="project">
                         <div class="project_icons penn">
                             <p class="icons_text project_title">UPenn</p>
-                            <p class="icons_text project_description">Data Visualizer</p>
+                            <p class="icons_text project_description">Benchworks</p>
                             <p class="icons_text description">Interface</p>
                             <div class="languages">
                                 <img class="skill_icon" src="media/css.svg">
@@ -288,13 +251,35 @@
                         </div>
                         <p class="project_p">I created a data visualization app to facilitate the graphing of large and varied data sets.  The app consists of a back end batch processor for data files, a metric file system, and a file coordinator.  The front end consists of a Shiny interface which allows the user to customize graphing options for the batch grapher.  This app makes exentive use of Shiny, jQuery, and third party libraries like shinyjs.<br/><br/>
 						
-						2000+ lines						
+						5000+ lines						
 						</p>
+                    </div>
+                    <div class="project">
+                        <div class="project_icons penn">
+                            <p class="icons_text project_title">GWU</p>
+                            <p class="icons_text project_description">BCO API</p>
+                            <p class="icons_text description">Interface</p>
+                            <div class="languages">
+                                <img class="skill_icon" src="media/css.svg">
+                                <img class="skill_icon" src="media/html.svg">
+                                <img class="skill_icon" src="media/jquery.svg">
+                                <img class="skill_icon" src="media/JS.svg">
+                            </div>
+                            <p class="icons_text description">Back End</p>
+                            <div class="languages">
+                                <img class="skill_icon" src="media/python.svg">
+                                <img class="skill_icon" src="media/r.svg">
+                            </div>
+                        </div>
+                        <p class="project_p">As the chief engineer for the FDA-funded BioCompute Object API (BCO API), I have produced a highly modular, abstracted python package.  This package provides a BCO API server which can be configured with simple configuration files, and allows for several BCO API-related functions to be utilized by lab members.<br/><br/>
+                        
+                        2500+ lines                     
+                        </p>
                     </div>
 					<div class="project">
                         <div class="project_icons georgia_tech">
                             <p class="icons_text project_title">Georgia Tech</p>
-                            <p class="icons_text project_description">Data Visualizer | <a class="special_link" href="apps/real_estate_visualizer/index.html" target="_blank">Link</a></p>
+                            <p class="icons_text project_description">Data Visualizer | <a class="special_link" href="apps/real_estate_visualizer/index.html" target="_blank">Link</a><i class="fa fa-external-link-square-alt"></i></p>
                             <p class="icons_text description">Interface</p>
                             <div class="languages">
                                 <img class="skill_icon" src="media/css.svg">
@@ -315,101 +300,17 @@
                     </div>
                 </div>
             </div>
-            <div class="primary_section" id="dev">
-                <div class="content_container">
-                    <h1>Dev</h1>
-                    <p class="specialty_overview">I began learning how to program around age 15 and have been building on my knowledge since.  In the last few years I have focused on data apps and automation, but I have also but several "basic" websites, complex database interfaces, and experimental web pages.</p>
-                    <div class="proficiencies"><p class="proficiency_title dev_proficiency">Proficiencies:</p><img class="proficiency_icon" src="media/html.svg"><img class="proficiency_icon" src="media/css.svg"><img class="proficiency_icon" src="media/jquery.svg"><img class="proficiency_icon" src="media/JS.svg"><img class="proficiency_icon" src="media/PHP.svg"></div>
-					<div class="project">
-                        <div class="project_icons politics">
-                            <p class="icons_text project_title">Political Data Shop</p>
-                            <p class="icons_text project_description">Process Automation</p>
-                            <p class="icons_text description">Data Ingestion</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/SQL.svg">
-                                <img class="skill_icon" src="media/python.svg">
-                            </div>
-                            <p class="icons_text description">Automated Migration</p>
-                            <div class="languages"><img class="skill_icon" src="media/python.svg"></div>
-                        </div>
-                        <p class="project_p">My client did not have efficient data ingestion procedures. To remedy this, I coded two major python API scripts from scratch that automated the data ingestion process between the client's servers and external data repositories. This reduced the data ingestion time from a week to one day.  These scripts were able to be run in the background, freeing up time for the client to work on other tasks.<br/><br/>1500+ lines</p>
-                    </div>
-					<div class="project">
-                        <div class="project_icons hr_group">
-                            <p class="icons_text project_title">The HR Group</p>
-                            <p class="icons_text project_description">IRS Form 990 Database</p>
-                            <p class="icons_text description">Interface</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/css.svg">
-                                <img class="skill_icon" src="media/html.svg">
-                                <img class="skill_icon" src="media/jquery.svg">
-                                <img class="skill_icon" src="media/JS.svg">
-                            </div>
-                            <p class="icons_text description">Back End</p>
-                            <div class="languages">
-                                <img class="skill_icon" src="media/PHP.svg">
-                                <img class="skill_icon" src="media/python.svg">
-                                <img class="skill_icon" src="media/SQL.svg">
-                            </div>
-                        </div>
-                        <p class="project_p">I developed a user interface to help my client transition away from an Excel-based to a MySQL-based data management system. I was able to reduce internal job time 60% by automating data retrieval from IRS servers. In addition, I programmed a script to automatically condense 100+ page PDFs into 4 page PDFs so that my client would not have to spend time opening and scanning for information.<br/><br/>3000+ lines</p>
-                    </div>
-                </div>
-            </div>
-            <div class="primary_section" id="math">
-                <div class="content_container">
-                    <h1>Math</h1>
-                    <p class="specialty_overview">In the context of data analysis and algorithm design, a proper application of mathematics or mathematical logic can result in significant time savings, whether they be computational, financial, or logistical in nature. I have designed and built several mathematically-based algorithms - with the speed of today's business world, the math may just make the difference.</p>
-                    <div class="proficiencies"><p class="proficiency_title">Proficiencies:&nbsp;&nbsp;&nbsp;Applied Mathematics / Statistics / Real Analysis</p></div>
-                    <div class="project">
-                        <div class="project_icons">
-                            <p class="icons_text project_title">UPenn</p>
-                            <p class="icons_text project_description">Quantitative Modeling</p>
-                            <p class="icons_text description">Areas</p>
-                            <p class="icons_text description2">Combinatorics, Topology, Real Analysis</p>
-                        </div>
-                        <p class="project_p">I work as a mathematician for the <a class="special_link" href="https://web.sas.upenn.edu/gregory-lab/" target="_blank">Gregory lab</a> at the University of Pennsylvania, developing models for genetic data.  The work involves the use of discrete mathematics and statistics, and the mechanism under study is implicated in a wide range of biological phenomena, such as gene expression, protein synthesis, and even cancer.</p>
-                    </div>
-					<div class="project">
-                        <div class="project_icons">
-                            <p class="icons_text project_title">UDC</p>
-                            <p class="icons_text project_description">Exam Attrition Rates | <a class="special_link" href="media/report.pdf" target="_blank">Link</a></p>
-                            <p class="icons_text description">Areas</p>
-                            <p class="icons_text description2">Applied Statistics, Mathematics Education</p>
-                        </div>
-                        <p class="project_p">As a mathematics teacher for the University of the District of Columbia's (UDC) Workforce Development Program, I was in charge of administering the entrance exam for prospective students. After a few months, I noticed that the pass rate was very low. So, I hired a statistics intern and performed statistical analysis to improve this. Using our results, I designed a remedial mathematics program which improved the student pass rate.</p>
-                    </div>
-                    <div class="project">
-                        <div class="project_icons">
-                            <p class="icons_text project_title">Allen Press</p>
-                            <p class="icons_text project_description">Internal Job Process Time</p>
-                            <p class="icons_text description">Areas</p>
-                            <p class="icons_text description2">Applied Statistics, Business Finance</p>
-                        </div>
-                        <p class="project_p">While working as a typesetter for a small printing press, I noticed that the job process time for one of our clients seemed to be taking longer than usual. I tracked the time for the job for about a week, then performed statistical analysis on the data to see what the financial ramifications were for the company. I determined that the company was wasting an average of $280,000 a year with this specific process. I reported my findings to management and the process was opened for review.</p>
-                    </div>
-					<div class="project">
-                        <div class="project_icons">
-                            <p class="icons_text project_title">Various</p>
-                            <p class="icons_text project_description">Mathematics Teaching</p>
-                            <p class="icons_text description">Areas</p>
-                            <p class="icons_text description2">Engineering Calculus, Algebra, Statistics</p>
-                        </div>
-                        <p class="project_p">I have nearly a decade of mathematics teaching experience.  I started teaching during engineering school, focusing primarily on the engineering calculus sequence.  In fact, a couple of my students went on to become tutors themselves.  Over the years I have taught at grade levels as low as elementary school (basic math teacher) and as high as the university (Georgia Tech applied probability and statistics Teaching Assisant).</p>
-                    </div>
-                </div>
-            </div>
 			<div class="primary_section" id="code_samples">
                 <div class="content_container">
                     <h1>Code Samples</h1>
-                    <p class="specialty_overview">You can view or download my code samples <a href="media/christopher_david_armstrong_code_samples.pdf" download>here</a>.</p>
+                    <p class="specialty_overview">You can view or download my code samples <a href="media/christopher_david_armstrong_code_samples.pdf" target="_blank">here</a>.</p>
                     <iframe src="media/christopher_david_armstrong_code_samples.pdf#page=1&zoom=75"></iframe>
                 </div>
             </div>
             <div class="primary_section" id="resume">
                 <div class="content_container">
                     <h1>Resum&eacute;</h1>
-                    <p class="specialty_overview">You can view or download my resum&eacute; <a href="media/christopher_david_armstrong_resume.pdf" download>here</a>.</p>
+                    <p class="specialty_overview">You can view or download my resum&eacute; <a href="media/christopher_david_armstrong_resume.pdf" target="_blank">here</a>.</p>
                     <iframe src="media/christopher_david_armstrong_resume.pdf#page=1&zoom=75"></iframe>
                 </div>
             </div>

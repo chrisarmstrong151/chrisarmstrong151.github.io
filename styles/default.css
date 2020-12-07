@@ -109,6 +109,9 @@ a.special_link {
 .fa{
     color: white;
 }
+.fa.explainer_link {
+    color: black;
+}
 #user_icon{
     font-size: 1.5em;
     margin: 0 35px 0 25px;
@@ -116,6 +119,9 @@ a.special_link {
 #data_icon{
     font-size: 1.35em;
     margin: 0 34px 0 24px;
+}
+#data_icon.special_icon {
+    margin: 0 31px 0 20px;
 }
 #web_icon{
     font-size: 1.5em;
@@ -229,11 +235,23 @@ h1{
 .hr_group{height: 300px;}
 .politics{height: 300px;}
 .project_p{
-    color: gray;
+    color: black;
     font-family: "Lato", sans-serif;
     font-size: 1.25em;
     line-height: 26px;
+    padding-left: 20px;
 	padding-right: 20px;
+}
+.project_p.associated_media {
+    font-size: 30px;
+    text-align: center;
+}
+.project_p a {
+    color: red;
+}
+.publication {
+    font-size: 20pt;
+    text-align: justify;
 }
 /*project icon stuff*/
 .icons_text{
@@ -364,8 +382,14 @@ iframe{
     min-width: 415px;
     width: 90%;
 }
+
+.explainer {
+    height: 557px;
+}
 .content_container h1{
-    margin: 20px 0;
+    /*margin: 20px 0;*/
+    font-size: 60px;
+    text-align: center;
 }
 .specialty_overview a{
     color: white;
